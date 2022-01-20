@@ -164,8 +164,6 @@ html, body{
 @media screen and (min-width: 1024px){
   .container{
     font-size: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     box-sizing: border-box;
     padding: 0px 10%;
   }
