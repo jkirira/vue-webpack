@@ -91,10 +91,25 @@ html, body{
   justify-content: center;
   flex-direction: column;
 }
-.nav{
+#nav{
   color: white;
   text-decoration: none;
 }
+
+#nav >a {
+  color: white;
+  margin-left: 10px;
+  background: #41B883;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#nav > .router-link-exact-active{
+  color: #41B883;
+  background: #ffffff;
+}
+
 .container{
   box-sizing: border-box;
   grid-gap: 20px;

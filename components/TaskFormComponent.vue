@@ -65,6 +65,10 @@ export default {
         emitAddTask(){
             let task_data = { name: this.local_task_name, description: this.local_task_description, date: this.local_task_date, remind_me: this.local_remind_me}
             console.log(task_data)
+            this.local_task_name ='',
+            this.local_task_description='',
+            this.local_task_date='',
+            this.local_remind_me=false,
             this.$emit('add_task', task_data)
             // console.log(this.data)
         }
@@ -80,6 +84,7 @@ form{
 .form-wrapper{
     border: 2px solid grey;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 .form-entry{
     text-align: left;
@@ -90,6 +95,9 @@ input, textarea{
     font-size: 1.3rem;
     width: 100%;
     box-sizing: border-box;
+}
+.task-buttons{
+  grid-template-columns: none;
 }
 
 #reminder{

@@ -27,3 +27,5 @@ import TaskFormComponent from "../components/TaskFormComponent";
         }
   }
 </script>
+<style>
+</style>

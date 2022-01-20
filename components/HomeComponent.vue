@@ -5,6 +5,7 @@
       <div class = "wrapper">
         Home Page
       </div>
+
     </div>
 
 </template>
@@ -14,12 +15,11 @@
 export default {
   name: 'Home',
   components: {},
-  beforeCreate() {
-    alert('This the first life cycle event: Before Create.')
+  data() {
+    return {}
   },
-  mounted() {
-    alert(`The component has been created and rendered.`);
-  }
+
+
 
 }
 </script>
@@ -44,6 +44,14 @@ export default {
   padding: 0 25%;
   margin: 10% 10%;
   border-radius: 10px;
+}
+
+.red-outline{
+  border: 2px solid red;
+}
+
+.green-outline{
+  border: 3px solid lime;
 }
 
 @media screen and (min-width: 350px) {

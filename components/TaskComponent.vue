@@ -83,7 +83,8 @@ export default {
 
 .task-buttons{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    grid-template-columns: none;
     grid-auto-rows: 50px;
     grid-gap: 10px;
     margin-top: 20px;
@@ -100,5 +101,11 @@ export default {
     color: #ffffff;
     padding: 0 5px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 400px){
+  .task-buttons{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
 </style>

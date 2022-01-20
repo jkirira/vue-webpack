@@ -4,7 +4,9 @@
 
       <div class="right">
         <h3>Reminders</h3>
+
         <router-view></router-view>
+
         <reminder-component v-for="(task, index) in toRemind" :key="index" v-bind:task="task"></reminder-component>
 
       </div>

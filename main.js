@@ -4,7 +4,7 @@ import router  from './router'
 import App from  './app'
 // require('./assets/scss/index.scss')
 
-require('./views')
+//require('/views')
 
 Vue.use(VueRouter)
 
