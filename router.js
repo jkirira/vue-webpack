@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from "vue-router";
-import Home from "./components/HomeComponent"
+// import Home from "./components/HomeComponent"
+import Index from "./views"
 import Tasks from "./views/Tasks"
 import Reminders from "./views/Reminders";
 import ReminderDetails from "./views/ReminderDetails";
@@ -12,7 +13,7 @@ import ReminderDetails from "./views/ReminderDetails";
 // `Vue.extend()`, or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-    { path: '/', component: Home, name: 'home' },
+    { path: '/', component: Index, name: 'index' },
     { path: '/tasks', component: Tasks, name: 'tasks', props: true },
     {
         path: '/reminders',

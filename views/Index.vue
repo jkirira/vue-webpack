@@ -3,16 +3,18 @@
     <button v-for="tab in tabs", v-bind:key="tab", v-bind:class="['tab-button', { active: currentTab === tab }]", v-on:click="currentTab = tab">
       {{tabs}}
     </button>
+
+    <component v-bind:is="currentTabComponent"></component>
   </div>
-  <component v-bind:is="currentTabComponent"></component>
+
 
 </template>
 
 <script>
-import HomeComponent from "./HomeComponent";
-import TaskFormComponent from "./TaskFormComponent";
+import HomeComponent from "../components/HomeComponent";
+import TaskFormComponent from "../components/TaskFormComponent";
   export default {
-      name:'index',
+      name:'Index',
       components: {
         HomeComponent,
         TaskFormComponent
