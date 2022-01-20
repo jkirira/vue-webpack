@@ -47,6 +47,7 @@
 
 <script>
 import CustomButton from './CustomButton.vue'
+import store from '../src/store'
 
 export default {
     name: "TaskForm",
